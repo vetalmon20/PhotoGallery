@@ -23,7 +23,7 @@ class ListScreen extends Component {
         fetch('https://api.unsplash.com/photos/random?count=30&client_id=IAMWV6Tx62TMZPQfRSTlJhbqzcireMDNXamZhjwXmX8')
         .then((response) => response.json())
         .then(function(data) {
-            console.log(data); 
+            //console.log(data); 
             this.setState({images:data, isLoading: false})
         }.bind(this)) 
         .catch((error) => console.error(error))
